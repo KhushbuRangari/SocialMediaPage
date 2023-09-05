@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <!-- FONT Awesome -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        .social-icons a:hover {
+            background-color: rgb(255, 255, 255);
+            transition: transform ease-out 2s;
+            transform: scale(1.5);
+
+        }
+
+        .social-icons li {
+            display: inline-block;
+            margin-right: 12px;
+            border: none;
+        }
+
+        .social-icons li i:hover {
+            text-decoration: none;
+            font-size: 20px;
+            /* color: rgb(255, 255, 255);  */
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- place navbar here -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+            <div class="container-fluid  py-3 fixed-top " style="background-color: rgb(59, 59, 59);">
+                <a class="navbar-brand text-white" href="#">
+                    <img src="https://static.vecteezy.com/system/resources/previews/012/493/083/original/instagram-logo-3d-illustration-free-png.png"
+                        style="height: 70px; width: 70px;" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="col col-sm-10 ">
+                        <ul class="navbar-nav me-auto ">
+                            <li class="nav-item ">
+                                <a class="nav-link active text-white active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active text-white" aria-current="page" href="#">Profile</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active text-white" aria-current="page" href="#">Messages</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active text-white" aria-current="page" href="#">Notifications</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active text-white" aria-current="page" href="#">Contacts</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active text-white" aria-current="page" href="#">Visits</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col col-sm-2 text-end ">
+                        <ul class="navbar-nav ">
+
+
+                            <li class="nav-item ">
+                                <button type="button" class="btn border-0 text-white" data-bs-toggle="modal"
+                                    data-bs-target="#staticBackdrop">
+                                    Sign In
+                                </button>
+                            </li>
+                            <li class="nav-item">
+                                <button type="button" class="btn border-0 text-white" data-bs-toggle="modal"
+                                    data-bs-target="#staticBackdrop1">
+                                    Sign Up
+                                </button>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+
+
+        <!-- Tab panes -->
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="tab1Id" role="tabpanel"></div>
+            <div class="tab-pane fade" id="tab2Id" role="tabpanel"></div>
+            <div class="tab-pane fade" id="tab3Id" role="tabpanel"></div>
+            <div class="tab-pane fade" id="tab4Id" role="tabpanel"></div>
+            <div class="tab-pane fade" id="tab5Id" role="tabpanel"></div>
+        </div>
+
+        <!-- (Optional) - Place this js code after initializing bootstrap.min.js or bootstrap.bundle.min.js -->
+        <script>
+            var triggerEl = document.querySelector('#navId a')
+            bootstrap.Tab.getInstance(triggerEl).show() // Select tab by name
+        </script>
+
+    </header>
+    <main>
+
+
+
+        <!-- row -->
+
+        <div class="container " style="padding-top: 10%;">
+            <div class="row text-end mb-2">
+                <div class="col-12"> <!-- Button trigger modal -->
+
+
+                    <!-- Modal -->
+                    <div class="modal " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="staticBackdropLabel">Login</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row text-center">
+                                        <div class="col-2"><label for="uname"><b>Username</b></label>
+
+                                        </div>
+                                        <div class="col-10"> <input type="text" placeholder="Enter Username"
+                                                name="uname" required></div>
+                                    </div>
+                                    <div class="row text-center">
+                                        <div class="col-2"> <label for="psw"><b>Password</b></label></div>
+                                        <div class="col-10"> <input type="password" placeholder="Enter Password"
+                                                name="psw" required></div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Sign In</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="col-2 mb-3"> -->
+                    <!-- Button trigger modal -->
+
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false"
+                        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="staticBackdropLabel">Sign Up</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body text-start">
+                                    <div class="row">
+                                        <div class="col-12 mb-2">
+                                            <p>Please fill in this form to create an account.</p>
+                                        </div>
+                                        <div class="col-2 fs-6"> <label for="email"><b>Email</b></label></div>
+                                        <div class="col-10 mb-2"> <input type="text" placeholder="Enter Email"
+                                                name="email" required></div>
+                                        <div class="col-2 fs-6"><label for="psw"><b>Password</b></label></div>
+                                        <div class="col-10 mb-2"> <input type="password" placeholder="Enter Password"
+                                                name="psw" required>
+                                        </div>
+                                        <div class="col-2 fs-6"> <label for="psw-repeat"><b>Repeat Password</b></label>
+                                        </div>
+                                        <div class="col-10"> <input type="password" placeholder="Repeat Password"
+                                                name="psw-repeat" required></div>
+                                    </div>
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Sign In</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="row ">
+                    <div class="col col-4 text-start">
+                        <div class="card">
+                            <img class="card-img-top"
+                                src="https://img.freepik.com/premium-photo/anime-cute-kawaii-girl-character-image-wallpaper-illustration-background-sunrise-sunset-young-woman_327903-622.jpg?w=360"
+                                style="height: 350px; width: 345px;" alt="Title">
+                            <div class="card-body">
+                                <h4 class="card-title">Khushbu Rangari</h4>
+                                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                    Dignissimos,
+                                    expedita, maiores excepturi minima rerum et possimus beatae laborum, fugiat ullam
+                                    suscipit? Commodi odio veniam excepturi dolores in unde odit quaerat.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-8 text-start">
+                        <div class="row mb-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4>Post Title 1</h4>
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio, temporibus!
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, amet?
+                                    <ul class="social-icons list-group list-group-horizontal list-group-flush py-1">
+                                        <li class="list-group-item"><a class="	fa fa-thumbs-o-up  " href=""></a></li>
+                                        <li class="list-group-item"><a class="fa fa-thumbs-o-down" href=""></a></li>
+                                        <li class="list-group-item"><a class="fa 	fas fa-user-plus" href=""></a></li>
+
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4>Post Title 2</h4>
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio, temporibus!
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio, temporibus!
+
+                                    <ul class="social-icons list-group list-group-horizontal list-group-flush py-1">
+                                        <li class="list-group-item"><a class="	fa fa-thumbs-o-up  " href=""></a></li>
+                                        <li class="list-group-item"><a class="fa fa-thumbs-o-down" href=""></a></li>
+                                        <li class="list-group-item"><a class="fa 	fas fa-user-plus" href=""></a></li>
+
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4>Post Title 3</h4>
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio, temporibus!
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio, temporibus!
+                                    <ul class="social-icons list-group list-group-horizontal list-group-flush py-1">
+                                        <li class="list-group-item"><a class="	fa fa-thumbs-o-up  " href=""></a></li>
+                                        <li class="list-group-item"><a class="fa fa-thumbs-o-down" href=""></a></li>
+                                        <li class="list-group-item"><a class="fa 	fas fa-user-plus" href=""></a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Advertisement Section -->
+            <!-- Task 5: Add an advertisement section -->
+            <div class="container mt-5">
+                <div class="card">
+                    <div class="card-body">
+                        <!-- Add advertisement content -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sign-in and Sign-up Modals -->
+            <!-- Task 6: Improve the user experience with modals -->
+            <!-- Task 7: Create sign-in and sign-up functionality using modals -->
+
+    </main>
+
+
+    <footer class="bg-dark py-4 text-center">
+        <!-- place footer here -->
+        <p style=" color: white;">&copy; 2023 Social Media. All rights reserved.</p>
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+
+
+        </script>
+</body>
+
+</html>
